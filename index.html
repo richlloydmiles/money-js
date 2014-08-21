@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Money Js Dev</title>
+<script type="text/javascript" src="js/money.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+		fx.base = "USD";
+	fx.rates = {
+		"EUR" : 0.745101, // eg. 1 USD === 0.745101 EUR
+		"ZAR" : 10.0000,
+		"USD" : 1,        // always include the base rate (1:1)
+		/* etc */
+	}
+
+console.log(fx.convert(1, {from: "USD", to: "ZAR"}));
+
+</script>
+
+</body>
+</html>
