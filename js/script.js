@@ -21,23 +21,23 @@ jQuery(document).ready(function($) {
 		);
 
 	   //  // Load exchange rates data via AJAX:
-    jQuery.getJSON(
-    	// NB: using Open Exchange Rates here, but you can use any source!
-        'https://openexchangerates.org/api/latest.json?app_id=[YOUR APP ID]',
-        function(data) {
-            // Check money.js has finished loading:
-            if ( typeof fx !== "undefined" && fx.rates ) {
-                fx.rates = data.rates;
-                fx.base = data.base;
-            } else {
-                // If not, apply to fxSetup global:
-                var fxSetup = {
-                    rates : data.rates,
-                    base : data.base
-                }
-            }
-        }
-    );
+    // jQuery.getJSON(
+    // 	// NB: using Open Exchange Rates here, but you can use any source!
+    //     'https://openexchangerates.org/api/latest.json?app_id=[YOUR APP ID]',
+    //     function(data) {
+    //         // Check money.js has finished loading:
+    //         if ( typeof fx !== "undefined" && fx.rates ) {
+    //             fx.rates = data.rates;
+    //             fx.base = data.base;
+    //         } else {
+    //             // If not, apply to fxSetup global:
+    //             var fxSetup = {
+    //                 rates : data.rates,
+    //                 base : data.base
+    //             }
+    //         }
+    //     }
+    // );
 
 	fx.base = "USD";
 	fx.rates = {
