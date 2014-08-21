@@ -11,8 +11,4 @@ Alternatively you can put in your own currency values at the:
 <code>
 fx.rates = 
 	</code>
-as well as add them to the select boxes as options - 
-
- <code> <option value="CAN">CAN</option> </code>
-  
-and they should work fine.
+as well as add them to the select boxes as options - and they should work fine.
