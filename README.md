@@ -9,16 +9,10 @@ I have also put static values in for various currencies, however, the functional
 Alternatively you can put in your own currency values at the:
 
 <code>
-fx.rates = {
-		"EUR" : 0.745101, // eg. 1 USD === 0.745101 EUR
-		"ZAR" : 10.0000,
-		"CAN" : 1.2,
-		"USD" : 1,        // always include the base rate (1:1)
-		/* etc */
-	}
+fx.rates = 
 	</code>
 as well as add them to the select boxes as options - 
 
-  <option value="CAN">CAN</option>
+ <code> <option value="CAN">CAN</option> </code>
   
 and they should work fine.
